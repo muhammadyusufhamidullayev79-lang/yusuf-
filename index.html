@@ -15,7 +15,22 @@ Index · HTML
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-      html[data-theme="light"] {
+    --bg: #0B0D0E;
+    --panel: #12191A;
+    --text: #F2F4F3;
+    --muted: #9FB0AC;
+    --border: rgba(255,255,255,0.12);
+    --accent: #2DD9A8;
+    --accent-soft: rgba(45,217,168,0.14);
+    --mono: 'JetBrains Mono', 'Courier New', monospace;
+    --heading: 'Sora', 'Inter', sans-serif;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --mx: 50%;
+    --my: 30%;
+    --page-gradient: linear-gradient(135deg, #10151A 0%, #12211D 22%, #163B32 40%, #1D5749 58%, #276B58 75%, #2C7A63 90%, #2F8168 100%);
+  }
+
+  html[data-theme="light"] {
     --bg: #F4F1EA;
     --panel: #FFFFFF;
     --text: #1A1A1A;
@@ -25,23 +40,18 @@ Index · HTML
     --accent-soft: #E4F0E8;
     --page-gradient: linear-gradient(135deg, #F7F4EC 0%, #F1EEE3 35%, #EDF3EE 65%, #E6F2EA 100%);
   }
-       --mx: 50%;
-    --my: 30%;
-    --page-gradient: linear-gradient(135deg, #10151A 0%, #12211D 22%, #163B32 40%, #1D5749 58%, #276B58 75%, #2C7A63 90%, #2F8168 100%);
-  }
-  
- 
+
   * { box-sizing: border-box; margin: 0; padding: 0; }
- 
+
   html { scroll-behavior: smooth; }
- 
-     body {
-    background: linear-gradient(135deg, #10151A 0%, #12211D 22%, #163B32 40%, #1D5749 58%, #276B58 75%, #2C7A63 90%, #2F8168 100%);
+
+  body {
+    background: var(--page-gradient);
     background-attachment: fixed;
     color: var(--text);
     font-family: var(--sans);
     line-height: 1.6;
-        -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
     position: relative;
   }
 
